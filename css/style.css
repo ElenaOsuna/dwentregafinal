@@ -254,7 +254,6 @@ grid-area:img4;
     flex-direction: column;
     padding: 2rem;
     border-radius: 20px 0 0 30px;
-     border-right: 2px solid #FF451C;
     width: 40%;
     background-color: white;
 }
@@ -266,4 +265,24 @@ grid-area:img4;
    background-color: #FF451C;;
    color: white;
 }
+@media (max-width: 767.98px) {
+  .contenedorContactos {
+    flex-direction: column;
 
+        .contactoIzquierda{
+        display: flex;
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        background-color: white;
+        }
+
+        .contactoDerecha{
+        display: flex;
+        justify-content: center;
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+      
+        }
+    }
+}
