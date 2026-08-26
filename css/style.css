@@ -1,0 +1,275 @@
+/*FONT--------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /*  font-family: "Urbanist", sans-serif; */
+
+ @font-face {
+    font-family: decorativaLectura;
+    src: url(../assets/fonts/LEMONMILK-Regular.otf);
+ }
+  @font-face {
+    font-family: decorativaBold;
+    src: url(../assets/fonts/LEMONMILK-Bold.otf);
+ }
+
+/*Reseteo del html--------------------------------------------------------------------*/
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/*Estilo Generales--------------------------------------------------------------------*/
+body{
+    width: 100%;
+    background:white ;
+    font-family: "Urbanist", sans-serif; 
+    height:min-vh-100;
+}
+h1{
+    font-family: "decorativaBold";
+    font-size:3rem ;
+    color: #FF451C;
+}
+img{
+    max-width: 100%;
+}
+/*Estilo de Header--------------------------------------------------------------------*/
+header{
+    background-color: #FF451C;
+    color: white;
+    font-size: 1.2rem; ;
+}
+ul li a {
+  color: inherit; /* Hereda el color del texto que lo rodea */
+  text-decoration: none; /* Elimina la línea subrayada */
+}
+header nav{
+    color: white;
+    width: auto;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+}
+/*Estilo Main--------------------------------------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+main .titulo p{
+    font-size:2rem;
+    color: gray;
+}
+/*Estilo index--------------------------------------------------------------------*/
+
+.contenedorIndex{
+    background-color: white;
+    margin: 3rem; 
+    height: 32rem;    
+}
+.indexIzquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+}
+.acentodeColor{
+    display: flex;
+    align-items:start;
+    justify-content:start;
+    text-align: start;
+    padding-left: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(189, 229, 43);
+    font-size: 2rem;
+    color: white;
+}
+
+.indexDerecha{
+    background-image:url(../assets/img/mainMujer.png);
+    background-position: center;     /* Centra la imagen */
+    background-repeat: no-repeat;    /* Evita que se repita */
+    height: 32rem;                   /* Define una altura visible */
+}
+/*Estilo Footer--------------------------------------------------------------------*/
+footer{
+    background-color: black;
+}
+
+.textFooter{
+    color: white;
+    margin: 1em 4em;
+}
+.logoFooter{
+    margin: 0.5em 1em ;
+}
+
+/*Estilo hola--------------------------------------------------------------------*/
+.contenedorHola{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    background-color: white;
+}
+.holacolumnaIzquierda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:10rem 0 1rem 3rem;
+}
+.bajadadeLinea{
+    font-size:2rem ;
+}
+.holacolumnaDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:31rem;
+    background-color: rgb(137, 212, 6);
+}
+.imagenHola{
+    display: flex;
+    width: 100%;
+    height:100%;
+    background-image:url(../assets/img/mainMujehola.png); 
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:white;
+}
+/*Estilo Galeria--------------------------------------------------------------------*/
+.contenedorGaleria{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    width: 100%;
+    padding: 3rem;
+    background-color:white;
+}
+.galeria{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "img1 img2 img4"
+    "img3 img5 img4";
+    padding: 3rem;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    background-color: #ff461c6b;
+    border-radius: 4rem;
+}
+.imgGal1{
+    grid-area: img1;
+}
+.imgGal2{
+    grid-area:img2 ;
+}
+.imgGal3{
+    grid-area:img3 ;
+}
+.imgGal4{
+grid-area:img4;
+}
+.imgGal5{
+    grid-area:img5;
+}
+
+/* Media Queary Tablet --------------------------------------------------------------*/
+@media (min-width:501px)and (max-width: 1023px){
+    .galeria{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "img1 img4"
+    "img3 img4"
+    "img2 img5";
+    align-items: center;
+    width: 100%;
+    background-color: #0a52b1a6;
+    border-radius: 2rem;
+    }
+}
+
+/* Media Query mobile----------------------------------------------------------------*/
+@media (max-width:500px){
+    .galeria{
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img5"
+    "img4";
+    background-color: #2bca256b;
+    border-radius: 2rem;
+}
+}
+
+/*Estilo Promos--------------------------------------------------------------------*/
+.contenedorPromo{
+    display: flex;
+    flex-direction:column;
+    justify-content: left;
+    width: 100%;
+    padding: 3rem;
+    background-color: white;
+}
+.servicios{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem  0 1rem 2rem;
+    background-color:black;
+}
+.colorCard{
+    background-color: #FF451C;
+}
+/*Estilo contactos--------------------------------------------------------------------*/
+.contenedorContactos{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    background-color: #ff461c6b;
+}
+
+.contactoDerecha{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 0 20px 30px 0;
+    width: 60%;
+    color: white;
+    background-color: #FF451C;
+}
+
+.contactoIzquierda{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 20px 0 0 30px;
+     border-right: 2px solid #FF451C;
+    width: 40%;
+    background-color: white;
+}
+.codigoWhatapp{
+    display: flex;
+    justify-content: center;
+}
+.btnEnviar{
+   background-color: #FF451C;;
+   color: white;
+}
+
