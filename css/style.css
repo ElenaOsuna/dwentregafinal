@@ -120,7 +120,7 @@ footer{
 .holacolumnaIzquierda{
     display: flex;
     flex-direction: column;
-    padding:10rem 0 1rem 3rem;
+    padding:6rem 0 1rem 3rem;
 }
 .bajadadeLinea{
     font-size:2rem ;
@@ -129,12 +129,12 @@ footer{
     display: flex;
     flex-direction: column;
     height:31rem;
-    background-color: rgb(137, 212, 6);
 }
 .imagenHola{
     display: flex;
     width: 100%;
-    height:100%;
+    height:32rem;
+    margin-top: 3rem;
     background-image:url(../assets/img/mainMujehola.png); 
     background-position: center;  
     background-repeat: no-repeat;
@@ -235,9 +235,6 @@ grid-area:img4;
 /*Estilo contactos--------------------------------------------------------------------*/
 .contenedorContactos{
     display: flex;
-    flex-direction:row;
-    align-items: center;
-    width: 100%;
     padding: 3rem;
     background-color: #ff461c6b;
 }
