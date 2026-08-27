@@ -196,13 +196,16 @@ grid-area:img4;
 .imgGal5{
     grid-area:img5;
 }
-
 .contenedorGaleria section article img{
     transition: all 1s;
 }
 
-.contenedorGaleria section article img:hover {
-    transform: scale(1,1);
+.contenedorGaleria section article img:hover{
+    transform: scale(1.2);
+}
+
+.contenedorGaleria section article{
+    overflow: hidden;
 }
 
 /* Media Queary Tablet --------------------------------------------------------------*/
