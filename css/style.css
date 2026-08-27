@@ -44,10 +44,19 @@ header{
     color: white;
     font-size: 1.2rem; ;
 }
-ul li a {
-  color: inherit; /* Hereda el color del texto que lo rodea */
-  text-decoration: none; /* Elimina la línea subrayada */
+header nav ul li:hover {
+    transform: scale(1.2);
+    text-decoration: underline; /* Agrega el subrayado al pasar el cursor */
+    /* Opcional: define estilo, grosor y distancia */
+    text-underline-offset: 4px; 
+    text-decoration-thickness: 2px;
 }
+
+header nav ul li a {
+    color: inherit; /* Hereda el color del texto que lo rodea */
+    text-decoration: none; /* Elimina la línea subrayada */
+}
+
 header nav{
     color: white;
     width: auto;
@@ -115,7 +124,10 @@ footer{
 .logoFooter{
     margin: 0.5em 1em ;
 }
-
+footer ul li :hover{
+    transition: all 1s;
+    transform: scale(1.1);
+}
 /*Estilo hola--------------------------------------------------------------------*/
 .contenedorHola{
     display: flex;
@@ -183,6 +195,14 @@ grid-area:img4;
 }
 .imgGal5{
     grid-area:img5;
+}
+
+.contenedorGaleria section article img{
+    transition: all 1s;
+}
+
+.contenedorGaleria section article img:hover {
+    transform: scale(1,1);
 }
 
 /* Media Queary Tablet --------------------------------------------------------------*/
