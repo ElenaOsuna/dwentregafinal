@@ -32,13 +32,13 @@ body {
 h1 {
   font-family: "decorativaBold";
   font-size: 2rem;
-  color: #FF451C;
+  color: #F32600;
 }
 
 h2 {
   font-family: "decorativaLectura";
   font-size: 1rem;
-  color: #FF451C;
+  color: #F32600;
 }
 
 img {
@@ -64,7 +64,7 @@ main .titulo p {
 }
 
 header {
-  background-color: #FF451C;
+  background-color: #F32600;
   color: white;
   font-size: 1.2rem;
 }
@@ -148,7 +148,7 @@ main .contenedorIndex .indexDerecha {
 }
 .contenedorGaleria .galH2 {
   margin-bottom: 2rem;
-  color: #FF451C;
+  color: #F32600;
 }
 .contenedorGaleria .galeria {
   display: grid;
@@ -223,7 +223,7 @@ main .contenedorIndex .indexDerecha {
   display: flex;
   align-items: center;
   padding: 1rem 0 1rem 2rem;
-  background-color: #FF451C;
+  background-color: #F32600;
 }
 .contenedorPromo div .servicios h2 {
   color: white;
@@ -252,7 +252,7 @@ main .contenedorContactos .contactoDerecha {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  background-color: #FF451C;
+  background-color: #F32600;
   border-radius: 0 20px 30px 0;
   width: 60%;
   color: white;
