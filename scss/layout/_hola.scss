@@ -1,0 +1,39 @@
+ @use "../utilities/variables" as *;
+ @use "../utilities/extend" as *;
+ @use "../utilities/mixin" as *;
+
+ .contenedorHola{
+    @extend %flex;
+    background-color:$blanco;
+
+        div{
+            .holacolumnaIzquierda{
+                    display: flex;
+                    flex-direction: column;
+                    padding:6rem 3rem 1rem 3rem;
+
+                        .bajadadeLinea{
+                            font-size:2rem ;
+                        }
+                }
+        
+            .holacolumnaDerecha{
+                    display: flex;
+                    flex-direction: column;
+                    height:31rem;
+
+                            .imagenHola{
+                                @extend %flex;
+                                height:32rem;
+                                background-image:url(../assets/img/mainMujehola.png); 
+                                background-position: center;  
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-color:$blanco;
+                            }
+                }
+            }
+}
+
+
+

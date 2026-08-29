@@ -1,0 +1,37 @@
+ @use "../utilities/variables" as *;
+ @use "../utilities/extend" as *;
+ @use "../utilities/mixin" as *;
+ @use "../base/animaciones" as *;
+
+/*Estilo index--------------------------------------------------------------------*/
+main{
+    .contenedorIndex{
+        background-color:$blanco;
+        margin: 3rem; 
+        height: 32rem; 
+
+        .indexIzquierda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra horizontalmente */
+            div{
+                .titulo{
+                    .acentodeColor{
+                         @include flex(null,start, start, null, 0 0 0 2rem, $verdemanzana);
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        font-size: 2rem;
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+        .indexDerecha{
+                background-image:url(../assets/img/mainMujer.png);
+                background-position: center;     /* Centra la imagen */
+                background-repeat: no-repeat;    /* Evita que se repita */
+                height: 32rem;                   /* Define una altura visible */
+        }
+    }
+}
+

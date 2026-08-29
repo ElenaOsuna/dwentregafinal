@@ -1,0 +1,45 @@
+@use "../utilities/variables" as *;
+
+
+/*Reseteo del html--------------------------------------------------------------------*/
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/*Estilo Generales--------------------------------------------------------------------*/
+body{
+    width: 100%;
+    background:$blanco;
+    font-family:$fte-general; 
+    height:min-vh-100;
+}
+h1{
+    font-family:$fte-titulos;
+    font-size:2rem ;
+    color:$naranja;
+}
+h2{
+    font-family:$fte-decorativa;
+    font-size:1rem ;
+    color:$naranja;
+}
+img{
+    max-width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+main .titulo p{
+    font-size:2rem;
+    color: gray;
+}

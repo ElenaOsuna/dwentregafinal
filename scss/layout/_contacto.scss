@@ -1,0 +1,57 @@
+ @use "../utilities/variables" as *;
+ @use "../utilities/extend" as *;
+ @use "../utilities/mixin" as *;
+
+ main {
+  .contenedorContactos {
+    @extend %flex;
+    background-color: $naranjaTrans;
+
+
+    .contactoIzquierda {
+      @include flex(column, null, null, null, 2rem, $blanco);
+      border-radius: 20px 0 0 30px;
+      width: 40%;
+
+      div {
+        .codigoWhatapp {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .contactoDerecha {
+      @include flex(column, null, null, null, 3rem, $naranja);
+      border-radius: 0 20px 30px 0;
+      width: 60%;
+      color: $blanco;
+
+      form {
+        .btnEnviar {
+          margin-top: 5px;
+          background-color: $verdemanzana;
+          color: $blanco;
+        }
+      }
+    }
+
+    // --- MEDIA QUERY ANIDADA AQUÍ ---
+      @media (max-width: 767.98px) {
+      flex-direction: column;
+      padding: 1.5rem; // Opcional: reducir padding en móviles
+
+      .contactoIzquierda {
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+      }
+
+      .contactoDerecha {
+        justify-content: center;
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+      }
+    }
+  }
+}

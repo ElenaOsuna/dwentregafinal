@@ -1,0 +1,20 @@
+//parcials (divido el codigo del css en paquetes de información) 
+ 
+ //Utilities
+ @use "utilities/variables";
+ @use "utilities/extend";
+ @use "utilities/mixin";
+
+ //Base
+ @use "base/fuentes";
+ @use "base/reseteo";
+ @use "base/animaciones";
+
+ //Layout
+@use "layout/header";
+@use "layout/main";
+@use "layout/hola";
+@use "layout/galeria";
+@use "layout/promos";
+@use "layout/contacto";
+ @use "layout/footer";

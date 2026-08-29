@@ -1,316 +1,297 @@
 /*FONT--------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
- /*  font-family: "Urbanist", sans-serif; */
-
- @font-face {
-    font-family: decorativaLectura;
-    src: url(../assets/fonts/LEMONMILK-Regular.otf);
- }
-  @font-face {
-    font-family: decorativaBold;
-    src: url(../assets/fonts/LEMONMILK-Bold.otf);
- }
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/*  font-family: "Urbanist", sans-serif; */
+@font-face {
+  font-family: decorativaLectura;
+  src: url(../assets/fonts/LEMONMILK-Regular.otf);
+}
+@font-face {
+  font-family: decorativaBold;
+  src: url(../assets/fonts/LEMONMILK-Bold.otf);
+}
+main .contenedorContactos, .contenedorHola, .contenedorHola div .holacolumnaDerecha .imagenHola {
+  display: flex;
+  padding: 3rem;
+}
 
 /*Reseteo del html--------------------------------------------------------------------*/
- *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*Estilo Generales--------------------------------------------------------------------*/
-body{
-    width: 100%;
-    background:white ;
-    font-family: "Urbanist", sans-serif; 
-    height:min-vh-100;
+body {
+  width: 100%;
+  background: white;
+  font-family: "Urbanist", sans-serif;
+  height: min-vh-100;
 }
-h1{
-    font-family: "decorativaBold";
-    font-size:2rem ;
-    color: #FF451C;
+
+h1 {
+  font-family: "decorativaBold";
+  font-size: 2rem;
+  color: #FF451C;
 }
-h2{
-    font-family: "decorativaLectura";
-    font-size:1rem ;
-    color: #FF451C;
+
+h2 {
+  font-family: "decorativaLectura";
+  font-size: 1rem;
+  color: #FF451C;
 }
-img{
-    max-width: 100%;
+
+img {
+  max-width: 100%;
 }
-/*Estilo de Header--------------------------------------------------------------------*/
-header{
-    background-color: #FF451C;
-    color: white;
-    font-size: 1.2rem; ;
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+main .titulo p {
+  font-size: 2rem;
+  color: gray;
+}
+
+header {
+  background-color: #FF451C;
+  color: white;
+  font-size: 1.2rem;
+}
+header nav {
+  color: white;
+  width: auto;
+  text-decoration: none;
 }
 header nav ul li:hover {
-    transform: scale(1.2);
-    text-decoration: underline; /* Agrega el subrayado al pasar el cursor */
-    /* Opcional: define estilo, grosor y distancia */
-    text-underline-offset: 4px; 
-    text-decoration-thickness: 2px;
+  transform: scale(1.2);
+  text-decoration: underline; /* Agrega el subrayado al pasar el cursor */
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
-
 header nav ul li a {
-    color: inherit; /* Hereda el color del texto que lo rodea */
-    text-decoration: none; /* Elimina la línea subrayada */
+  color: white;
+  text-decoration: none;
 }
 
-header nav{
-    color: white;
-    width: auto;
-    text-decoration: none;
-}
-footer{
-    background-color: black;
-}
-/*Estilo Main--------------------------------------------------------------------*/
-main{
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-}
-.titulo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-}
-main .titulo p{
-    font-size:2rem;
-    color: gray;
-}
 /*Estilo index--------------------------------------------------------------------*/
-
-.contenedorIndex{
-    background-color: white;
-    margin: 3rem; 
-    height: 32rem;    
+main .contenedorIndex {
+  background-color: white;
+  margin: 3rem;
+  height: 32rem;
 }
-.indexIzquierda{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
+main .contenedorIndex .indexIzquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra horizontalmente */
 }
-.acentodeColor{
-    display: flex;
-    align-items:start;
-    justify-content:start;
-    text-align: start;
-    padding-left: 2rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: rgb(189, 229, 43);
-    font-size: 2rem;
-    color: white;
+main .contenedorIndex .indexIzquierda div .titulo .acentodeColor {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 0 0 0 2rem;
+  background-color: rgb(189, 229, 43);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 2rem;
+  color: white;
 }
-
-.indexDerecha{
-    background-image:url(../assets/img/mainMujer.png);
-    background-position: center;     /* Centra la imagen */
-    background-repeat: no-repeat;    /* Evita que se repita */
-    height: 32rem;                   /* Define una altura visible */
-}
-/*Estilo Footer--------------------------------------------------------------------*/
-footer{
-    background-color: black;
+main .contenedorIndex .indexDerecha {
+  background-image: url(../assets/img/mainMujer.png);
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  height: 32rem; /* Define una altura visible */
 }
 
-.textFooter{
-    color: white;
-    margin: 1em 4em;
+.contenedorHola {
+  background-color: white;
 }
-.logoFooter{
-    margin: 0.5em 1em ;
+.contenedorHola div .holacolumnaIzquierda {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 3rem 1rem 3rem;
 }
-footer ul li :hover{
-    transition: all 1s;
-    transform: scale(1.1);
+.contenedorHola div .holacolumnaIzquierda .bajadadeLinea {
+  font-size: 2rem;
 }
-/*Estilo hola--------------------------------------------------------------------*/
-.contenedorHola{
-    display: flex;
-    width: 100%;
-    background-color: white;
+.contenedorHola div .holacolumnaDerecha {
+  display: flex;
+  flex-direction: column;
+  height: 31rem;
 }
-.holacolumnaIzquierda{
-    display: flex;
-    flex-direction: column;
-    padding:6rem 3rem 1rem 3rem;
-}
-.bajadadeLinea{
-    font-size:2rem ;
-}
-.holacolumnaDerecha{
-    display: flex;
-    flex-direction: column;
-    height:31rem;
-}
-.imagenHola{
-    display: flex;
-    width: 100%;
-    height:32rem;
-    margin-top: 3rem;
-    background-image:url(../assets/img/mainMujehola.png); 
-    background-position: center;  
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color:white;
-}
-/*Estilo Galeria--------------------------------------------------------------------*/
-.contenedorGaleria{
-    display: flex;
-    flex-direction:column;
-    align-items: start;
-    width: 100%;
-    padding: 3rem;
-    background-color:white;
-}
-.galeria{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-    "img1 img2 img4"
-    "img3 img5 img4";
-    padding: 3rem;
-    gap: 1.5rem;
-    align-items: center;
-    width: 100%;
-    background-color: #ff461c6b;
-    border-radius: 4rem;
-}
-.imgGal1{
-    grid-area: img1;
-}
-.imgGal2{
-    grid-area:img2 ;
-}
-.imgGal3{
-    grid-area:img3 ;
-}
-.imgGal4{
-grid-area:img4;
-}
-.imgGal5{
-    grid-area:img5;
-}
-.contenedorGaleria section article img{
-    transition: all 1s;
+.contenedorHola div .holacolumnaDerecha .imagenHola {
+  height: 32rem;
+  background-image: url(../assets/img/mainMujehola.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
 }
 
-.contenedorGaleria section article img:hover{
-    transform: scale(1.2);
+.contenedorGaleria {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem;
+  background-color: white;
+  width: 100%;
 }
-
-.contenedorGaleria section article{
-    overflow: hidden;
+.contenedorGaleria .galH2 {
+  margin-bottom: 2rem;
+  color: #FF451C;
 }
-
-/* Media Queary Tablet --------------------------------------------------------------*/
-@media (min-width:501px)and (max-width: 1023px){
-    .galeria{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
+.contenedorGaleria .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "img1 img2 img4" "img3 img5 img4";
+  padding: 3rem;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 70, 28, 0.4196078431);
+  border-radius: 4rem;
+}
+.contenedorGaleria .galeria [class^=imgGal] {
+  overflow: hidden;
+}
+.contenedorGaleria .galeria [class^=imgGal] img {
+  transition: all 1s;
+}
+.contenedorGaleria .galeria [class^=imgGal] img:hover {
+  transform: scale(1.2);
+}
+.contenedorGaleria .galeria .imgGal1 {
+  grid-area: img1;
+}
+.contenedorGaleria .galeria .imgGal2 {
+  grid-area: img2;
+}
+.contenedorGaleria .galeria .imgGal3 {
+  grid-area: img3;
+}
+.contenedorGaleria .galeria .imgGal4 {
+  grid-area: img4;
+}
+.contenedorGaleria .galeria .imgGal5 {
+  grid-area: img5;
+}
+.contenedorGaleria .galeria {
+  /* Media Query Tablet */
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .contenedorGaleria .galeria {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-    "img1 img4"
-    "img3 img4"
-    "img2 img5";
-    align-items: center;
-    width: 100%;
-    background-color: #0a52b1a6;
+    grid-template-areas: "img1 img4" "img3 img4" "img2 img5";
+    background-color: rgba(10, 82, 177, 0.6509803922);
     border-radius: 2rem;
-    }
+  }
 }
-
-/* Media Query mobile----------------------------------------------------------------*/
-@media (max-width:500px){
-    .galeria{
-    grid-template-columns:1fr;
+.contenedorGaleria .galeria {
+  /* Media Query Mobile */
+}
+@media (max-width: 500px) {
+  .contenedorGaleria .galeria {
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-    "img1"
-    "img2"
-    "img3"
-    "img5"
-    "img4";
-    background-color: #2bca256b;
+    grid-template-areas: "img1" "img2" "img3" "img5" "img4";
+    background-color: rgb(189, 229, 43);
     border-radius: 2rem;
-}
-}
-
-/*Estilo Promos--------------------------------------------------------------------*/
-.contenedorPromo{
-    display: flex;
-    flex-direction:column;
-    justify-content: left;
-    width: 100%;
-    padding: 3rem;
-    background-color: white;
-}
-.servicios{
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 1rem  0 1rem 2rem;
-    background-color:black;
-}
-.colorCard{
-    background-color: #FF451C;
-}
-/*Estilo contactos--------------------------------------------------------------------*/
-.contenedorContactos{
-    display: flex;
-    padding: 3rem;
-    background-color: #ff461c6b;
+  }
 }
 
-.contactoDerecha{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    border-radius: 0 20px 30px 0;
-    width: 60%;
-    color: white;
-    background-color: #FF451C;
+.contenedorPromo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 3rem;
+  background-color: white;
+  width: 100%;
+}
+.contenedorPromo div .servicios {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 1rem 2rem;
+  background-color: #FF451C;
+}
+.contenedorPromo div .servicios h2 {
+  color: white;
 }
 
-.contactoIzquierda{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 20px 0 0 30px;
-    width: 40%;
-    background-color: white;
+.colorCard {
+  background-color: black;
 }
-.codigoWhatapp{
-    display: flex;
-    justify-content: center;
+
+main .contenedorContactos {
+  background-color: rgba(255, 70, 28, 0.4196078431);
 }
-.btnEnviar{
-   background-color: #FF451C;;
-   color: white;
+main .contenedorContactos .contactoIzquierda {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 20px 0 0 30px;
+  width: 40%;
+}
+main .contenedorContactos .contactoIzquierda div .codigoWhatapp {
+  display: flex;
+  justify-content: center;
+}
+main .contenedorContactos .contactoDerecha {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #FF451C;
+  border-radius: 0 20px 30px 0;
+  width: 60%;
+  color: white;
+}
+main .contenedorContactos .contactoDerecha form .btnEnviar {
+  margin-top: 5px;
+  background-color: rgb(189, 229, 43);
+  color: white;
 }
 @media (max-width: 767.98px) {
-  .contenedorContactos {
+  main .contenedorContactos {
     flex-direction: column;
-
-        .contactoIzquierda{
-        display: flex;
-        justify-content: center;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-        background-color: white;
-        }
-
-        .contactoDerecha{
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0 20px 20px;
-        width: 100%;
-      
-        }
-    }
+    padding: 1.5rem;
+  }
+  main .contenedorContactos .contactoIzquierda {
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+  main .contenedorContactos .contactoDerecha {
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+  }
 }
+
+footer {
+  background-color: black;
+}
+footer .logoFooter {
+  margin: 0.5em 1em;
+}
+footer .textFooter {
+  color: white;
+  margin: 1em 4em;
+}
+footer ul li:hover {
+  transition: all 1s;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

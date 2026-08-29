@@ -1,0 +1,18 @@
+@use "../base/fuentes" as *;
+
+//VARIABLES de fuentes
+$fte-general:"Urbanist", sans-serif; 
+$fte-titulos: "decorativaBold";
+$fte-decorativa:"decorativaLectura";
+
+//VARIABLES de color
+$naranja:#FF451C;
+$naranjaTrans:#ff461c6b;
+$verdemanzana:rgb(189, 229, 43);
+$negro:black;
+$blanco:white;
+$gris:gray;
+$celeste:rgb(10, 127, 163);
+
+//VARIABLE de transformacion (NO kframe)
+$tranformacion:scale(1.2);

@@ -4,101 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/img/icon.png">
-     <!--METAETIQUETA -->
+    
+    <!-- METAETIQUETA -->
     <meta name="description" content="¿Tenes un proyecto en mente? Ponte en contacto conmigo para cotizar tu sitio web, branding o diseño impreso. ¡Empecemos a trabajar juntos!">
-     <!--Bootstrap.-->
+    
+    <!-- Animacion AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--CSS--> 
+    
+    <!-- CSS --> 
     <link rel="stylesheet" href="../css/style.css">
+    
     <title>Contacto y Cotizaciones | Impulsar</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-    <!-- navBar!! -------------------------------------------------------------------------------------------------------------->
-          <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid px-5">
-                        <a class="navbar-brand" href="#"><img src="../assets/img/impulsarLG.png" alt="Impulsar - Diseño Gráfico y Desarrollo Web"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon "></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../index.html">Inicio</a>
-                                </li>
-                                 <li class="nav-item">
-                                  <a class="nav-link" href="./hola.html">Hola!</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./galeria.html">Galería</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./promos.html">Promos</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+        <!-- navBar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="#"><img src="../assets/img/impulsarLG.png" alt="Impulsar - Diseño Gráfico y Desarrollo Web"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hola.html">Hola!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
-    <!-- Main ------------------------------------------------------------------------------------------------------------------>
-     <main class="container-fluid">
+
+    <!-- Main -->
+    <main class="container-fluid">
         <div class="row contenedorContactos">
-          <div class="contactoIzquierda col-lg-6 col-md-6 col-sm-12">
-            <h1 class="fs-1">Contacto</h1>
-            <div class="">
+            <!-- Columna Izquierda -->
+            <div class="contactoIzquierda col-lg-6 col-md-6 col-sm-12">
+                <h1 class="fs-1"  data-aos="flip-up" data-aos-duration="1500">Contacto</h1>
+                <div>
                     <div>
                         <p>
-                        <strong>Cel.:</strong><br>
-                        +54 9 11 6253 2562<br><br>
-                        <strong>E-mail:</strong><br>
-                        impulsarbsas@gmail.com
+                            <strong>Cel.:</strong><br>
+                            +54 9 11 6253 2562<br>
+                            <strong>E-mail:</strong><br>
+                            impulsarbsas@gmail.com
                         </p>
                     </div>
-                     <div class="codigoWhatapp">
+                    <div class="codigoWhatapp">
                         <img src="../assets/img/codigoWapp.png" alt="Código WhatsApp para que puedas agendarme!">
                     </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="col-lg-6 col-md-6 col-sm-12 contactoDerecha">
+                <h2>Enviame tu consulta</h2>
+                <form>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <p>Nunca compartiremos sus datos con alguien más</p>
+                    </div>
+                    <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btnEnviar w-100">Enviar</button>
+                </form>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 contactoDerecha">
-        <h2>Enviame tu consulta</h2>
-        <form>
-            <div>
-            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <p >Nunca compartiremos sus datos con alguien más</p>
-            </div>
-            <div >
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btnEnviar w-100">Enviar</button>
-        </form>
-        </section>
-        </div>
-       </div>
-     </main>
-    <!-- Footer------------------------------------------------------------------------------------------------------------------>
-    <footer class="nav justify-content-center">
+    </main>
+
+    <!-- Footer -->
+      <footer class="nav justify-content-center">
             <div class="logoFooter">
-            <img src="../assets/img/impulsarLG_footer.png" alt="Impulsar - Diseño Gráfico y Desarrollo Web">
+                 <img src="../assets/img/impulsarLG_footer.png" alt="Impulsar - Diseño Gráfico y Desarrollo Web">
             </div>
             <p class="textFooter"> © 2026 Copyright: Elena Osuna - Impulsar </p>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> <img src="../assets/img/bot_inst.png" alt="Visítanos en Instagram"> </a>
+                        <a class="nav-link" href="#"> <img src="../assets/img/bot_inst.png" alt="Visítanos en Instagram"> </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="../assets/img/bot_link.png" alt="Visitanos en linkedin"></a>
+                        <a class="nav-link" href="#"><img src="../assets/img/bot_link.png" alt="Visitanos en linkedin"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> <img src="../assets/img/bot_facebk.png" alt="Visitanos en facebook"></a>
-                </li>
+                        <a class="nav-link" href="#"> <img src="../assets/img/bot_facebk.png" alt="Visitanos en facebook"></a>
+                 </li>
            </ul>
     </footer>
-    <!--JavaScript---------------------------------------------------------------------------------------------------------->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

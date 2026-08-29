@@ -1,0 +1,33 @@
+ @use "../utilities/variables" as *;
+ @use "../utilities/extend" as *;
+ @use "../utilities/mixin" as *;
+
+ header{
+    background-color:$naranja;
+    color: $blanco;
+    font-size: 1.2rem; ;
+        nav{
+        color: $blanco;
+        width: auto;
+        text-decoration: none;
+        ul{
+           
+            li{
+                &:hover{
+                transform:$tranformacion;
+                text-decoration: underline; /* Agrega el subrayado al pasar el cursor */
+                text-underline-offset: 4px; 
+                text-decoration-thickness: 2px;
+
+                }
+                a{
+                color: $blanco;
+                text-decoration: none;
+                }
+
+            }
+        }
+            
+    }
+
+}

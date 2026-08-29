@@ -1,0 +1,27 @@
+ @use "../utilities/variables" as *;
+ @use "../utilities/extend" as *;
+ @use "../utilities/mixin" as *;
+
+ .contenedorPromo{
+    @include flex(column,left,null,null,3rem,$blanco);
+    width: 100%;
+
+        div{
+                h1{ }
+                
+               .servicios{
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem  0 1rem 2rem;
+                        background-color:$naranja;
+                        h2{
+                            color:$blanco;
+                        }
+
+        }
+}
+
+}
+.colorCard{
+    background-color:$negro;
+}
