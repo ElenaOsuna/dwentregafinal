@@ -27,19 +27,3 @@ h2{
 img{
     max-width: 100%;
 }
-
-main{
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-}
-.titulo{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-}
-main .titulo p{
-    font-size:2rem;
-    color: gray;
-}

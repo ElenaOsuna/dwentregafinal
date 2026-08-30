@@ -45,24 +45,6 @@ img {
   max-width: 100%;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
-.titulo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-}
-
-main .titulo p {
-  font-size: 2rem;
-  color: gray;
-}
-
 header {
   background-color: #F32600;
   color: white;
@@ -85,6 +67,11 @@ header nav ul li a {
 }
 
 /*Estilo index--------------------------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
 main .contenedorIndex {
   background-color: white;
   margin: 3rem;
@@ -94,6 +81,16 @@ main .contenedorIndex .indexIzquierda {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra horizontalmente */
+}
+main .contenedorIndex .indexIzquierda div .titulo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+main .contenedorIndex .indexIzquierda div .titulo p {
+  font-size: 2rem;
+  color: gray;
 }
 main .contenedorIndex .indexIzquierda div .titulo .acentodeColor {
   display: flex;

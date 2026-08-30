@@ -5,6 +5,10 @@
 
 /*Estilo index--------------------------------------------------------------------*/
 main{
+    display: flex;
+    flex-direction: column;
+    background-color:$blanco;
+
     .contenedorIndex{
         background-color:$blanco;
         margin: 3rem; 
@@ -16,13 +20,22 @@ main{
             justify-content: center; /* Centra horizontalmente */
             div{
                 .titulo{
-                    .acentodeColor{
-                         @include flex(null,start, start, null, 0 0 0 2rem, $verdemanzana);
-                        border-top-right-radius: 20px;
-                        border-bottom-right-radius: 20px;
-                        font-size: 2rem;
-                        color: $blanco;
-                    }
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color:$blanco;
+                    
+                            p{
+                                font-size:2rem;
+                                color:$gris;
+                            }
+                            .acentodeColor{
+                                @include flex(null,start, start, null, 0 0 0 2rem, $verdemanzana);
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                font-size: 2rem;
+                                color: $blanco;
+                            }
                 }
             }
         }
