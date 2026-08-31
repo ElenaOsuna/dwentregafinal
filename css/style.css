@@ -154,8 +154,8 @@ main .contenedorIndex .indexDerecha {
 .contenedorGaleria .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "img1 img2 img4" "img3 img5 img4";
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "texGal texGal texGal" "img1   img2   img4" "img3   img5   img4";
   padding: 3rem;
   gap: 1.5rem;
   align-items: center;
@@ -171,6 +171,9 @@ main .contenedorIndex .indexDerecha {
 }
 .contenedorGaleria .galeria [class^=imgGal] img:hover {
   transform: scale(1.2);
+}
+.contenedorGaleria .galeria .tituloGal {
+  grid-area: texGal;
 }
 .contenedorGaleria .galeria .imgGal1 {
   grid-area: img1;
@@ -193,8 +196,8 @@ main .contenedorIndex .indexDerecha {
 @media (min-width: 501px) and (max-width: 1023px) {
   .contenedorGaleria .galeria {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "img1 img4" "img3 img4" "img2 img5";
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "texGal texGal" "img1   img4" "img3   img4" "img2   img5";
     background-color: rgba(10, 82, 177, 0.6509803922);
     border-radius: 2rem;
   }
@@ -205,8 +208,8 @@ main .contenedorIndex .indexDerecha {
 @media (max-width: 500px) {
   .contenedorGaleria .galeria {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "img1" "img2" "img3" "img5" "img4";
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "texGal" "img1" "img2" "img3" "img5" "img4";
     background-color: rgb(189, 229, 43);
     border-radius: 2rem;
   }
