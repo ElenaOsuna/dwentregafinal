@@ -9,7 +9,7 @@
   font-family: decorativaBold;
   src: url(../assets/fonts/LEMONMILK-Bold.otf);
 }
-main .contenedorContactos, .contenedorHola, .contenedorHola div .holacolumnaDerecha .imagenHola {
+.contenedorContactos, .contenedorHola, .contenedorHola div .holacolumnaDerecha .imagenHola {
   display: flex;
   padding: 3rem;
 }
@@ -43,6 +43,10 @@ h2 {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -230,65 +234,72 @@ main .contenedorIndex .indexDerecha {
   background-color: black;
 }
 
-main .contenedorContactos {
+.contenedorContactos {
   background-color: rgba(255, 70, 28, 0.4196078431);
 }
-main .contenedorContactos .contactoIzquierda {
+.contenedorContactos .contactoIzquierda {
   display: flex;
   flex-direction: column;
   padding: 2rem;
   background-color: white;
   border-radius: 20px 0 0 30px;
-  width: 40%;
 }
-main .contenedorContactos .contactoIzquierda div .codigoWhatapp {
+.contenedorContactos .contactoIzquierda .codigoWhatapp {
   display: flex;
   justify-content: center;
 }
-main .contenedorContactos .contactoDerecha {
+.contenedorContactos .contactoDerecha {
   display: flex;
   flex-direction: column;
   padding: 3rem;
   background-color: #F32600;
   border-radius: 0 20px 30px 0;
-  width: 60%;
   color: white;
 }
-main .contenedorContactos .contactoDerecha form .btnEnviar {
-  margin-top: 5px;
-  background-color: rgb(189, 229, 43);
+.contenedorContactos .contactoDerecha h2 {
   color: white;
+}
+.contenedorContactos .contactoDerecha form .campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+.contenedorContactos .contactoDerecha form .campo label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.contenedorContactos .contactoDerecha form .btnEnviar {
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 @media (max-width: 767.98px) {
-  main .contenedorContactos {
+  .contenedorContactos {
     flex-direction: column;
     padding: 1.5rem;
   }
-  main .contenedorContactos .contactoIzquierda {
+  .contenedorContactos .contactoIzquierda {
     justify-content: center;
     border-radius: 20px 20px 0 0;
-    width: 100%;
   }
-  main .contenedorContactos .contactoDerecha {
+  .contenedorContactos .contactoDerecha {
     justify-content: center;
     border-radius: 0 0 20px 20px;
-    width: 100%;
   }
 }
 
 footer {
   background-color: black;
-}
-footer .logoFooter {
-  margin: 0.5em 1em;
-}
-footer .textFooter {
   color: white;
-  margin: 1em 4em;
-}
-footer ul li:hover {
-  transition: all 1s;
-  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

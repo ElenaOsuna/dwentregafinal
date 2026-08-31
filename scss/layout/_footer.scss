@@ -1,3 +1,4 @@
+ @use "../base/reseteo" as*;
  @use "../utilities/variables" as *;
  @use "../utilities/extend" as *;
  @use "../utilities/mixin" as *;
@@ -5,22 +6,6 @@
 
 footer{
     background-color:$negro;
-    .logoFooter{
-        margin: 0.5em 1em ;
-    }
-    .textFooter{
-        color:$blanco;
-        margin: 1em 4em;
-    }
-    ul{
-        li{
-            &:hover{
-                transition: all 1s;
-                transform: $tranformacion;
-            }
-            
-        }
-    }
-    
+    color:$blanco;
 }
 

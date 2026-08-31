@@ -89,41 +89,74 @@
             <!-- Columna Derecha -->
             <div class="col-lg-6 col-md-6 col-sm-12 contactoDerecha">
                 <h2>Enviame tu consulta</h2>
-                <form>
-                    <div>
-                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <p>Nunca compartiremos sus datos con alguien más</p>
+                <form action="#" method="POST" class="formulario-contacto ampliarForm">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" required autocomplete="name">
                     </div>
-                    <div>
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        aria-describedby="email-help" 
+                        required 
+                        autocomplete="email"
+                        >
+                        <small id="email-help">Te responderemos a esta casilla en menos de 24 hs.</small>
                     </div>
-                    <button type="submit" class="btn btnEnviar w-100">Enviar</button>
+
+                    <div class="campo">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select id="motivo" name="motivo" required>
+                        <option value="">Seleccioná una opción...</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="presupuesto">Presupuesto</option>
+                        <option value="soporte">Soporte</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btnEnviar">Enviar consulta</button>
+
                 </form>
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
-      <footer class="nav justify-content-center">
-            <div class="logoFooter">
-                 <img src="../assets/img/impulsarLG_footer.png" alt="Impulsar - Diseño Gráfico y Desarrollo Web">
+    <!--Footer -->
+    <footer class="container-fluid py-3 px-4 px-lg-5">
+        <div class="row align-items-center text-center text-lg-start">
+            <!-- Columna 1: Logo -->
+            <div class="col-lg-4 col-md-4 col-12 mb-3 mb-md-0">
+                <img src="../assets/img/impulsarLG_footer.png" alt="Logo de Impulsar" class="img-fluid">
             </div>
-            <p class="textFooter"> © 2026 Copyright: Elena Osuna - Impulsar </p>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="../assets/img/bot_inst.png" alt="Visítanos en Instagram"> </a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="../assets/img/bot_link.png" alt="Visitanos en linkedin"></a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="../assets/img/bot_facebk.png" alt="Visitanos en facebook"></a>
-                 </li>
-           </ul>
-    </footer>
 
+            <!-- Columna 2: Copyright -->
+            <div class="col-lg-4 col-md-4 col-12 mb-3 mb-md-0 text-center">
+                <p class="mb-0">© 2026 Copyright: Elena Osuna</p>
+            </div>
+
+            <!-- Columna 3: Redes Sociales -->
+            <div class="col-lg-4 col-md-4 col-12 text-center text-lg-end">
+                <a href="https://www.linkedin.com/in/elena-osuna/" target="_blank" rel="noopener noreferrer" class="me-2">
+                    <img src="../assets/img/bot_link.png" alt="Visita mi perfil de LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/impulsardg/" target="_blank" rel="noopener noreferrer" class="me-2">
+                    <img src="../assets/img/bot_inst.png" alt="Visita la página de Instagram">
+                </a>
+                <a href="https://www.facebook.com/impulsardg" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/bot_facebk.png" alt="Visita la página de Facebook">
+                </a>
+            </div>
+        </div> 
+    </footer>
     <!-- AOS SCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

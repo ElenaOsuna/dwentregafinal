@@ -2,56 +2,75 @@
  @use "../utilities/extend" as *;
  @use "../utilities/mixin" as *;
 
- main {
-  .contenedorContactos {
-    @extend %flex;
-    background-color: $naranjaTrans;
+ // 1. Selector principal directo (sin anidar en main)
+.contenedorContactos {
+                @extend %flex;
+                background-color: $naranjaTrans;
 
+                // Columna Izquierda
+                .contactoIzquierda {
+                      @include flex(column, null, null, null, 2rem, $blanco);
+                      border-radius: 20px 0 0 30px;
 
-    .contactoIzquierda {
-      @include flex(column, null, null, null, 2rem, $blanco);
-      border-radius: 20px 0 0 30px;
-      width: 40%;
+                      // Directo a la clase sin pasar por 'div'
+                      .codigoWhatapp {
+                        display: flex;
+                        justify-content: center;
+                      }
+                }
 
-      div {
-        .codigoWhatapp {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
+                // Columna Derecha
+                .contactoDerecha {
+                        @include flex(column, null, null, null, 3rem, $naranja);
+                        border-radius: 0 20px 30px 0;
+                        color: $blanco;
 
-    .contactoDerecha {
-      @include flex(column, null, null, null, 3rem, $naranja);
-      border-radius: 0 20px 30px 0;
-      width: 60%;
-      color: $blanco;
+                        h2 {
+                          color: $blanco;
+                        }
 
-      form {
-        .btnEnviar {
-          margin-top: 5px;
-          background-color: $verdemanzana;
-          color: $blanco;
-        }
-      }
-    }
+                        form {
+                              .campo {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 1.25rem;
 
-    // --- MEDIA QUERY ANIDADA AQUÍ ---
-      @media (max-width: 767.98px) {
-      flex-direction: column;
-      padding: 1.5rem; // Opcional: reducir padding en móviles
+                                      label {
+                                        font-weight: 600;
+                                        margin-bottom: 0.5rem;
+                                        color: $blanco;
+                                      }
+                              }
 
-      .contactoIzquierda {
-        justify-content: center;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-      }
+                              .btnEnviar {
+                                margin-top: 5px;
+                                background-color: $negro;
+                                color: $blanco;
+                                width: 100%;
+                                padding: 0.85rem;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                border: none;
+                                border-radius: 6px;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease, transform 0.1s ease;
+                              }
+                        }
+                }
 
-      .contactoDerecha {
-        justify-content: center;
-        border-radius: 0 0 20px 20px;
-        width: 100%;
-      }
-    }
-  }
+                // 2. Media Query limpia anidada dentro del contenedor
+                @media (max-width: 767.98px) {
+                  flex-direction: column;
+                  padding: 1.5rem;
+
+                  .contactoIzquierda {
+                    justify-content: center;
+                    border-radius: 20px 20px 0 0;
+                  }
+
+                  .contactoDerecha {
+                    justify-content: center;
+                    border-radius: 0 0 20px 20px;
+                  }
+                }
 }
